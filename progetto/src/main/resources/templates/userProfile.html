@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>My Profile</title>
+</head>
+<body>
+
+
+	<div><h1>Your Profile</h1></div>
+
+	<div>
+		<table>
+			<tr>First name:<td th:text="${user.nome}">..</td></tr>
+			<tr>Last name:<td th:text="${user.cognome}">..</td></tr>
+			<tr>Username:<td th:text="${user.username}">..</td></tr>
+			<tr>Username:<td th:text="${user.dataDiCreazione}">..</td></tr>
+			<tr>Role:<td th:text="${user.role}">..</td></tr>
+
+		</table>
+	</div>
+
+
+	<a href="/users/modify">Modify</a>
+
+	<a href="/home">Go back</a>
+
+</body>
+</html>

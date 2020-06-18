@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>List</title>
+</head>
+<body>
+	<div>
+		<thead>
+			<table>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="project : ${progetti}">
+				<td><a th:href="'/task/' + ${project.id}" th:text="${project.nome}"></a>...</td>
+				<td th:text="${project.descrizione}">...</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

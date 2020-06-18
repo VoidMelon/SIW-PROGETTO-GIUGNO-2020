@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>All Users List</title>
+</head>
+<body>
+	<div><h1>Users's list</h1></div>
+
+
+
+
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Username</th>
+					<th>Last Name</th>
+					<th>First Name</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="utenti : ${users}">
+					<td th:text="${utenti.username}"></td>
+					<td th:text="${utenti.cognome}"></td>
+					<td th:text="${utenti.nome}"></td>
+					<td>
+						<form method="POST" th:action="@{/admin/users/{username}/delete(username=${utenti.username})}">
+							<button type="submit" name="submit" value="value">DELETE</button>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

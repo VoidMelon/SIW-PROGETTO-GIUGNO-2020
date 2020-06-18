@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>Show Projects Shared with Me</title>
+</head>
+<body>
+	<div>
+		<h1>Visible Projects</h1>
+		<table>
+			<tr th:each="visible : ${visibili}">
+				<td th:text="${visible.nome}"></td>
+				<td th:text="${visible.descrizione}"></td>
+			</tr>
+
+		</table>
+	</div>
+	<a href="/home">Go Back</a>
+
+</body>
+</html>

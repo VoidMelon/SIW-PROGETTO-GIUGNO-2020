@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<h1 th:text="'Welcome ' + ${user.nome} + '!'" >Welcome</h1>
+	<h4><a href="/projects">My Projects</a></h4>
+	<h4><a href="/projects/add">Create new Project</a></h4>
+	<h4><a href="/users/me">Profile</a></h4>
+	<h4><a href="/task">Create new Task</a></h4>
+	<h4><a href="/tag">Create new Tags</a></h4>
+	<h4><a href="/tags">Assign Tag to a Project</a></h4>
+	<h4><a href="/tagfortask">Assign Tag to a Task</a></h4>
+	<h4><a href="/projects/sharedProjects">Share Projects Shared With Me</a></h4>
+	<h4><a href="/logout">Logout</a></h4>
+
+</body>
+</html>

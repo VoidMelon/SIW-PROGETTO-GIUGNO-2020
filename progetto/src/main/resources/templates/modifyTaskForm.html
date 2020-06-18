@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>Modify</title>
+</head>
+<body>
+	<h1>Modify Task</h1>
+	<form id="modifyTaskForm" th:action="@{/{taskId}/mod/success(taskId=${task.id})}" method="POST">
+		<table>
+			<tr>
+				<td><label for="taskNameInput">Task Name</label></td>
+				<td><input id="taskNameInput" type="text" th:field="${taskModifyForm.nome}" required/></td>
+				<td th:if="${#fields.hasErrors('taskModifyForm.nome')}" th:errors="${taskModifyForm.nome}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td><label for="descriptionInput">Description</label></td>
+				<td><input id="descriptionInput" type="text" th:field="${taskModifyForm.descrizione}" /></td>
+				<td th:if="${#fields.hasErrors('taskModifyForm.descrizione')}" th:errors="${taskModifyForm.descrizione}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Modify Task</button></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

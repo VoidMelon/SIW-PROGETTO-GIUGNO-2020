@@ -1,0 +1,112 @@
+UC1:SignUp
+l'Utente decide ddi registrarsi sulla piattaforma viene reindirizzato su una form register dove deve compilare una form
+L'Utente compila la form e se va tutto bene viene reindirizzato verso la pagina iniziale /index
+
+
+
+
+
+UC2:Autenticazione
+L'Utente decide di accedere alla piattaforma per poter usufruire dei suoi servizi
+L'Utente quindi decide di accedere alla form del Login
+L'Utente compila la form con le sue credenziali di accesso , Username e Password,
+Se tutto e' andato a buon fine viene reindirizzato nella pagina iniziale /home
+
+
+
+UC3:Visualizzazione profilo
+L'Utente decide di voler vedere i suoi dati
+L'Utente che si trova nella pagina /home decide di cliccare su "il mio profilo" per vedere i dati registrati
+se tutto e' andato bene l'Utente si trovera' davanti la pagina con i suoi dati
+
+
+
+UC4:Aggiornare il profilo Utente
+L'Utente deve aver sbagliato con i dati di accesso, quindi decide di modificarli,
+L'Utente dalla pagina profilo clicca su "Modifica" dove viene reindirizzato su una form con campi nome e cognome,
+se tutto e' andato come previsto, l'Utente verra' reindirizzato sulla pagina profilo, con i campi aggiornati
+
+
+
+UC5
+L'Utente decide di creare un proprio progetto
+L'Utente clicca su crea progetto
+L'Utente viene reindirizzato su una form
+L'Utente inseririsce i dati del progetto
+se tutto e' andato a buon fine l'Utente viene reindirizzato sui dettagli del progetto appena creato
+
+
+UC5 Visualizzare i progetti
+L'Utente vuole vedere i propri progetti creati
+L'Utente quindi clicca su "i miei progetti" e viene reindirizzato su una pagina con i dettagli dei propri progetti
+
+UC6 Visualizzare i progetti condivisi con l'Utente
+L'Utente vuole visualizzare i progetti che sono stati condivisi con lui
+L'Utente dalla home clicca "condivisi con me"
+se tutto va a buon fine l'Utente si trovera' davanti la lista dei progetti condivisi
+
+UC7 Aggiornare i dati di un progetto
+L'Utente vuole aggiornare i dati di un progetto 
+quindi dalla pagina dei dettagli del progetto clicca su modifica
+L'Utente viene reindirizzato su una form con i dati da modificare del progetto
+L'Utente quindi compila la form clicca su modifica
+se tutto e' andato a buon fine l'Utente si ritrovera' davanti la pagina con i dettagli del progetto(modificato)
+
+
+UC8 Cancellare un progetto
+L'Utente decide di voler eliminare un determinato progetto
+dalla pagina dei dettagli del progetto,l'Utente dovra' semplicemente cliccare su Elimina
+se tutto e' andato a buon fine l'utente si ritrovera' reindirizzato su /home
+
+
+UC9 Condividere un progetto con un altro Utente
+l'Utente decide di voler condividere un determinato progetto con un determinato Utente
+dalla pagina dei dettagli dell'oggetto che vuole condividere, l'Utente clicca su "Condividi con"
+Il Sistema quindi presa la richiesta rispedisce l'Utente in una pagina form da compilare per cercare l'Utente con cui vuole condividere il progetto
+L'Utente compila la form e se tutto e' andato bene, l'Utente viene reindirizzato su /home
+
+UC10 (Estensione)
+L'Utente decide di assegnare una tag ad un suo progetto
+l'Utente quindi clicca su "Assegna Tag a progetto"
+Il Sistema prende la richiesta e rispedisce l'Utente sulla lista dei Tag creati da assegnare ad un suo progetto
+L'Utente clicca sul tag che vuole assegnare e viene rispedito su una lista di progetti (suoi)
+l'Utente clicca sul progetto a cui vuole assegnare il tag e se tutto e' andato a buon fine viene rispedito sulla pagina home
+
+UC11 Crea e Assegna Task a Progetto
+l'Utente decide di volere creare un Task ad un suo Progetto
+Il Sistema prende la richiesta e reindirizza l'Utente su una pagina form dove deve compilare i campi del task
+L'Utente compila la form
+Se tutto e' andato a buon fine , l'Utente si ritrovera' reindirizzato sulla pagina dei dettagli del progetto a cui ha assegnato il Task
+
+UC12 Modifica Task
+L'Utente decide di voler modifica un task del progetto
+sui dettagli del progetto dove e' situato il task che vuole modificare,l'Utente clicca su modifica e viene reindirizzato su una form da compilare
+L'Utente compila la form e clicca su modifica
+Il Sistema su tutto e' andato bene reindirizza l'Utente sulla pagina dei miei progetti
+
+
+UC13 Cancella Task
+L'Utente decide di eliminare il task dal sistema
+dai dettagli del progetto l'Utente clicchera' il tasto Elimina
+se tutto e' andatoa  buon fine il Sistema reindirizzera' l'Utente su Home
+
+
+UC14 Assegna Task ad un membro del progetto
+L'Utente vuole assegnare un membro ad un task
+sui dettagli del progetto l'Utente clicca su "Assegna a" e verra' reindirizzato su una pagina form dove il sistema chiedera' username dell'membro e nome del progetto del task
+il Sistema se tutto e' andato bene reindirizzera' l'Utente su /home
+
+
+
+UC15 Assegna Tag ad un task di un mio progetto
+L'Utente vuole assegnare un tag ad un task di un suo progetto, quindi clicchera' su "Assegna Tag ad un Task"
+Il Sistema portera' l'Utente su una pagina che mostra una lista di Tag creati dall'Utente
+l'Utente clicchera' su uno dei Tag che vuole assegnare
+Il Sistema quinddi lo reindirizzera' sulla lista dei progetti creati da lui
+L'Utente quindi scegliera' il progetto dove e' situato il task a cui vuole assegnare il tag
+Il Sistema prendera' la richiesta e restituira' la lista dei task che possiede il progetto scelto dall'Utente
+L'Utente scegliera' il task a cui vuole assegnare il tag
+Se tutto e' andato a buon fine il Sistema restituira' i dettagli del progetto del task scelto 
+
+
+

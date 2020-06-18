@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>List</title>
+</head>
+<body>
+	<div>
+	    <form id="findMemberForm" th:action="@{/{taskId}/assign/member/success(taskId=${task.id})}" method="POST">
+		<table>
+			<tr>
+				<td><label for="usernameInput">Username</label></td>
+				<td><input id="usernameInput" type="text" th:field="${memberFindForm.username}" required/></td>
+				<td th:if="${#fields.hasErrors('memberFindForm.username')}" th:errors="${memberFindForm.username}" th:style="'color:red'"></td>
+
+			</tr>
+			<tr>
+				<td><label for="usernameInput">Project Name</label></td>
+				<td><input id="usernameInput" type="text" th:field="${progettoForm.nome}" required/></td>
+				<td th:if="${#fields.hasErrors('progettoForm.nome')}" th:errors="${progettoForm.nome}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit">Assign</button>
+				</td>
+			</tr>
+		</table>
+	   </form>
+	</div>
+
+</body>
+</html>

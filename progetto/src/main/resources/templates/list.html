@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>List</title>
+</head>
+<body>
+	<div>
+		<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="project : ${progetti}">
+				<td th:text="${project.nome}">...</td>
+				<td th:text="${project.descrizione}">...</td>
+				<td><form method="POST" th:action="@{/tags/{tagId}/success/{projectId}(tagId= ${tag.id}, projectId= ${project.id})}">
+							<button type="submit" name="submit" value="value">Assign to this project</button>
+				</form>
+			</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

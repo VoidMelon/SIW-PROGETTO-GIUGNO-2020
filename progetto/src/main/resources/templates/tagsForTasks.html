@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+	<title>Tag List</title>
+</head>
+<body>
+	<div>
+		<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Color</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="tag : ${tags}">
+				<td><a th:href="'/tagfortask/' + ${tag.id}" th:text="${tag.nome}"></a>...</td>
+				<td th:text="${tag.colore}">
+				<td th:text="${tag.descrizione}">...</td>
+			</tr>
+		</tbody>
+		</table>
+		<a href="/home">Go Back</a>
+	</div>
+
+</body>
+</html>
